@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "238871804098",
+    "project_id": "sanjeevlutask",
+    "storage_bucket": "sanjeevlutask.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238871804098:android:d4ea51b7b7ed402618a35b",
+        "android_client_info": {
+          "package_name": "fininfocom.task.sanjeevlu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "238871804098-p237cpi18sedam1k4s8oc8l149q9ti77.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQlbZ_h_ZP68lMbXx4WZvO1AoUImDgeUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "238871804098-p237cpi18sedam1k4s8oc8l149q9ti77.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
