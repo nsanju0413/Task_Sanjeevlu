@@ -25,12 +25,11 @@ public class LoginActivity extends AppCompatActivity {
     String user,pwd;
     private static final Pattern PASSWORD_PATTERN =
             Pattern.compile("^" +
-                    "(?=.*[0-9])" +         //at least 1 digit
-                    "(?=.*[A-Z])" +         //at least 1 upper case letter
-                    "(?=.*[@#$%^&+=])" +    //at least 1 special character
-                    ".{7}" +               //at least 8 character
+                    "(?=.*[0-9])" +
+                    "(?=.*[A-Z])" +
+                    "(?=.*[@#$%^&+=])" +
+                    ".{7}" +
                     "$");
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,7 +64,7 @@ public class LoginActivity extends AppCompatActivity {
          password.setError("Password Cant be empty");
          return false;
      }else if(!PASSWORD_PATTERN.matcher(passwordVal).matches()) {
-         password.setError("Password does not match the required pattern");
+         password.setError("Password does not match the required pattern ");
          return false;
      }
      else {
@@ -77,7 +76,7 @@ public class LoginActivity extends AppCompatActivity {
         String usernameInput = username.getEditText().getText().toString().trim();
 
         if (usernameInput.isEmpty()) {
-            username.setError("Field can't be empty");
+            username.setError("Username can't be empty");
             return false;
         } else if (usernameInput.length() != 10) {
             username.setError("Username must be 10 characters");
@@ -105,7 +104,7 @@ public class LoginActivity extends AppCompatActivity {
                     finish();
                 }
                 else
-                    Toast.makeText(LoginActivity.this, "Credentials not found on DB", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Invalid credentials", Toast.LENGTH_SHORT).show();
             }
             else
                 Toast.makeText(LoginActivity.this, "DB Does not Exist", Toast.LENGTH_SHORT).show();

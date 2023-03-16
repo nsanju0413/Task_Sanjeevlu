@@ -35,13 +35,11 @@ public class MyAdapter extends  RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.nameV.setText("Name:"+n);
         holder.addressV.setText("Adress:" +a);
         holder.ageV.setText("Age :"+s);
-
     }
     @Override
     public int getItemCount() {
         return details.size();
     }
-
     public static class MyViewHolder extends RecyclerView.ViewHolder
     {
         TextView nameV,addressV,ageV;

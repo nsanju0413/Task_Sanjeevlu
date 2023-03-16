@@ -3,11 +3,8 @@ package fininfocom.task.sanjeevlu;
 public class Detail {
     public String name,city;
     int age;
-
-
     public Detail()
     {
-
     }
     public Detail(int age, String city, String name) {
         this.name = name;
